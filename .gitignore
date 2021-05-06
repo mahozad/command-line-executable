@@ -1,0 +1,10 @@
+### Kotlin
+*.class
+*.log
+*.jar
+hs_err_pid*
+
+### IntelliJ
+.idea/**/workspace.xml
+.idea/**/shelf
+out/
