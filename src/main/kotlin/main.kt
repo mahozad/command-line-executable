@@ -4,6 +4,10 @@ import kotlin.system.exitProcess
 /**
  * The *man* program on linux looks for manual pages of a program in _/usr/man_
  * directory. So, you should copy your man files in there at installation time.
+ *
+ * [Here](https://askubuntu.com/a/345150), [here](https://stackoverflow.com/q/5570795),
+ * [here](https://stackoverflow.com/q/5255372), and [here](https://stackoverflow.com/q/12595270)
+ * show how shell autocompletes arguments for a command when pressing <kbd>Tab</kbd>
  */
 fun main(args: Array<String>) {
     if (args.contains("--help")) {
@@ -17,6 +21,7 @@ fun main(args: Array<String>) {
     val input = if (args.contains("--input")) {
         FileReader("file name argument after --input").buffered()
     } else {
+        // Get input from standard input
         System.`in`.bufferedReader()
     }
 
