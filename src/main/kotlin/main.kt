@@ -1,3 +1,4 @@
+import java.io.FileReader
 import kotlin.system.exitProcess
 
 /**
@@ -12,4 +13,12 @@ fun main(args: Array<String>) {
         println("v1.0.0")
         exitProcess(0)
     }
+
+    val input = if (args.contains("--input")) {
+        FileReader("file name argument after --input").buffered()
+    } else {
+        System.`in`.bufferedReader()
+    }
+
+    input.close()
 }
