@@ -8,6 +8,7 @@ import kotlin.system.exitProcess
  * [Here](https://askubuntu.com/a/345150), [here](https://stackoverflow.com/q/5570795),
  * [here](https://stackoverflow.com/q/5255372), and [here](https://stackoverflow.com/q/12595270)
  * show how shell autocompletes arguments for a command when pressing <kbd>Tab</kbd>
+ * (called *programmable completion*).
  */
 fun main(args: Array<String>) {
     if (args.contains("--help")) {
