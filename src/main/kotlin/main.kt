@@ -11,15 +11,15 @@ import kotlin.system.exitProcess
  * (called *programmable completion*).
  */
 fun main(args: Array<String>) {
-    if (args.contains("--help")) {
+    if ("--help" in args) {
         println("This is the help to show to users.")
         exitProcess(0)
-    } else if (args.contains("--version")) {
+    } else if ("--version" in args) {
         println("v1.0.0")
         exitProcess(0)
     }
 
-    val input = if (args.contains("--input")) {
+    val input = if ("--input" in args) {
         FileReader("file name argument after --input").buffered()
     } else {
         // Get input from standard input
