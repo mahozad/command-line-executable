@@ -9,6 +9,8 @@ and [jline](https://github.com/jline/jline3/).
 ### Progress bars
 See [this page](https://changaco.oy.lc/unicode-progress-bars/)
 and [FiraCode](https://github.com/tonsky/FiraCode#:~:text=Fira%20Code%20is%20the%20first,bars)
+and [this post](https://stackoverflow.com/q/2685435)
+and [this post](https://stackoverflow.com/q/3173320)
 for creating progress bars.
 
 ### Auto-completion
